@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Thêm khoảng cách trên cùng để tránh việc nội dung bị che khuất bởi header cố định */
+}
+
+header {
+    background-color: whitesmoke;
+    color: #000000;
+    padding: 20px 0;
+    position: fixed; /* Giữ header cố định */
+    top: 0; /* Đặt header ở phần trên cùng */
+    width: 100%; /* Đảm bảo header kéo dài toàn bộ chiều rộng của trang */
+    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+div ul li {
+    margin-left: 20px;
+}
+
+div ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div ul li a:hover {
+    text-decoration: underline;
+}
